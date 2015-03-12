@@ -20,7 +20,7 @@ public class GameModes extends ActionBarActivity {
 
             "흑과 백 I", "흑과 백 II", "전략윷놀이", "인디언 포커", "인디언 홀덤"
     };*/
-    TextView t1, t2, t3, t4, t5, t6, t7, t8, t9;
+    TextView t1, t2, t3, t4, t5, t6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,9 +52,7 @@ public class GameModes extends ActionBarActivity {
         t4 = (TextView) findViewById(R.id.text4);
         t5 = (TextView) findViewById(R.id.text5);
         t6 = (TextView) findViewById(R.id.text6);
-        t7 = (TextView) findViewById(R.id.text7);
-        t8 = (TextView) findViewById(R.id.text8);
-        t9 = (TextView) findViewById(R.id.text9);
+
 
         t1.setClickable(true);
         t2.setClickable(true);
@@ -62,9 +60,7 @@ public class GameModes extends ActionBarActivity {
         t4.setClickable(true);
         t5.setClickable(true);
         t6.setClickable(true);
-        t7.setClickable(true);
-        t8.setClickable(true);
-        t9.setClickable(true);
+
 
         t1.setOnClickListener(new View.OnClickListener() {
 
@@ -126,35 +122,6 @@ public class GameModes extends ActionBarActivity {
             }
         });
 
-        t7.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-
-                Toast.makeText(getBaseContext(), "[2,0] Clicked",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        t8.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-
-                Toast.makeText(getBaseContext(), "[2,1] Clicked",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        t9.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-
-                Toast.makeText(getBaseContext(), "[2,2] Clicked",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
 
